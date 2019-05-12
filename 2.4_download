@@ -1,0 +1,18 @@
+#!/bin/sh
+
+. /usr/local/src/apm/config/apm_config
+
+# apache 2.4.39
+wget "https://github.com/kimtaekhan/apm/raw/master/httpd-2.4.39.tar.gz"
+
+# openssl-1.0.1i
+wget "https://github.com/kimtaekhan/apm/raw/master/openssl-1.0.1i.tar.gz"
+
+# pcre-8.35
+wget "https://github.com/kimtaekhan/apm/raw/master/pcre-8.35.tar.bz2"
+
+# apr-1.5.1
+wget "https://github.com/kimtaekhan/apm/raw/master/apr-1.5.1.tar.gz"
+
+# apt-util-1.5.3
+wget "https://github.com/kimtaekhan/apm/raw/master/apr-util-1.5.3.tar.gz"
