@@ -89,8 +89,51 @@ sed -i ''"${err_off_number}"'i ServerName www.example.com:80' /usr/local/apache/
 /etc/init.d/httpd start
 
 # test page work
-cd /usr/local/apache/htdocs
-echo "<center>Hello~ LinuxMaster.NET webserver</center>" > index.html
+cat << index > /usr/local/apache/htdocs/index.html
+<html>
+	<head>
+		<!--
+			title
+		-->
+		<title> install OK ! </title>
+
+		<!--
+			style
+		-->
+		<style>
+			* {
+			    margin: 0px;
+    			padding: 0px;
+			}
+			html, body
+			{
+				text-align: center;
+    			height: 100%;
+			}
+			#kth
+			{
+				font-size: 30;
+				font-weight: bold;
+				margin: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<font size=10>Thanks for using KTH apm installation script !</font><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<img src="https://github.com/kimtaekhan/done_img/raw/master/apache.jpg" width="500" height="250" alt="apache" />
+		<img src="https://github.com/kimtaekhan/done_img/raw/master/php.jpg" width="500" height="250" alt="apache" />
+		<img src="https://github.com/kimtaekhan/done_img/raw/master/mysql.png" width="500" height="250" alt="apache" />
+		<div id="kth">
+			<br><br><br><br>
+			<br><br>Copyright &#169; KIM TAEK HAN<br>
+		</div>
+	</body>
+</html>
+index
+
 
 # accept 80 port
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
