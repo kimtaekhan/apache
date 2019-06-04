@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# apache 2.2.34
+wget "http://mirror.23media.de/apache/httpd/httpd-2.2.34.tar.gz"
+
+# openssl-1.0.1i
+wget "https://github.com/kimtaekhan/apm/raw/master/openssl-1.0.1i.tar.gz"
+
+# pcre-8.35
+wget "https://github.com/kimtaekhan/apm/raw/master/pcre-8.35.tar.bz2"
+
+# apr-1.5.1
+wget "https://github.com/kimtaekhan/apm/raw/master/apr-1.5.1.tar.gz"
+
+# apt-util-1.5.3
+wget "https://github.com/kimtaekhan/apm/raw/master/apr-util-1.5.3.tar.gz"
